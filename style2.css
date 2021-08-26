@@ -1,0 +1,241 @@
+body {
+    background-image: url('/Assets/BG\ Texture.jpg');
+}
+
+.hero {
+    background-image: url('/Assets/Header BG.jpg');
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2%;
+    color: #ed1c24;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em !important;
+}
+  
+  *, *:after, *:before{box-sizing: border-box; 
+    -webkit-text-size-adjust: none;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -webkit-font-smoothing: antialiased;
+  }
+  
+  .accordion-slider {
+    width: 100%;
+    height: 658px;
+    overflow: hidden;
+    margin: 0px auto;
+    max-width: 100%;
+  }
+  .accordion-slider-inner{
+    margin-left: -90px;
+    margin-right: -90px;
+  }
+  .accordion-slider ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .accordion-slider ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 658px;
+    transition: all 500ms ease-in-out;
+  
+    transform: translate3d(0, 0, 0) skew(-15deg, 0deg);
+    overflow: hidden;
+  }
+  .accordion-slider ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+  }
+  
+  .accordion-slider ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  
+    transform: translate3d(0, 0, 0) skew(15deg, 0deg);
+  
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 230%;
+    height: 100%;
+  }
+  
+  .accordion-slider ul li div a {
+    display: block;
+    height: 658px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .accordion-slider ul li div a img {
+    display: block;
+    width: 25%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+  }
+
+  .accordion-slider ul li div a button {
+    display: block;
+    width: 25%;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+  }
+  
+  .accordion-slider ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .accordion-slider ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 160px;
+  }
+  
+  .accordion-slider ul li div a p {
+    top: 160px;
+    font-size: 18px;
+    padding-left: 1em;
+  }
+  
+  .accordion-slider ul li:nth-child(1) > div{ 
+    background-image: url("Assets/Axeon3xRDS1.jpg"); 
+    background-position: top center;
+  }
+  
+  .accordion-slider ul li:nth-child(2) > div{ 
+    background-image: url("Assets/10-22-2.jpg"); 
+    background-position: top center;
+  }
+  
+  .accordion-slider ul li:nth-child(3) > div{ 
+    background-image: url("Assets/Brodax44SM.jpg"); 
+    background-position: top center;
+  }
+  
+  .accordion-slider ul li:nth-child(4) > div{ 
+    background-image: url("Assets/OD50-1.jpg"); 
+      background-position: top center;
+  }
+  
+  .accordion-slider ul li:nth-child(5) > div{ 
+    background-image: url("Assets/REKT-Social-01.jpg"); 
+      background-position: top center;
+  }
+  
+  .accordion-slider ul li:nth-child(6) > div{ 
+    background-image: url("Assets/17_Umarex_T4E_Atmo_ZB5A1453_ret.jpg"); 
+      background-position: top center;
+  }
+  .accordion-slider ul li:nth-child(7) > div{ 
+    background-image: url("Assets/DSC_4680.jpg"); 
+      background-position: top center;
+  }
+  
+  
+  .accordion-slider ul li { background-size: cover; }
+  .accordion-slider ul.show li,
+  .accordion-slider ul:hover li { width: 10%; }
+  .accordion-slider ul.show li.active,
+  .accordion-slider ul:hover li:hover { width: 90%; }
+  .accordion-slider ul.show li.active > div,
+  .accordion-slider ul:hover li:hover > div{ 
+    width: 170%; 
+    background-position: center; 
+    backface-visibility: hidden; 
+    padding-left: 70%;
+  
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+  }
+  .accordion-slider ul:hover li:hover::before{
+    background-color: rgba(0,0,0,0);
+  }
+  
+  /*.accordion-slider ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
+  
+  .accordion-slider ul:hover li:hover a * {
+    opacity: 1;
+  }
+   @media screen and (max-width: 680px) {
+    
+    body { margin: 0; }
+    .accordion-slider { height: auto; }
+  
+    .accordion-slider ul li,
+    .accordion-slider ul li:hover,
+    .accordion-slider ul:hover li,
+    .accordion-slider ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none;
+    }
+    .accordion-slider ul li div a * {
+      opacity: 1;
+    }
+  }
+  
+
+  .tab-pane {
+    background-color: black;
+    color: white;
+  }
+  
+  .tab-pane img,p {
+    padding: 2%;
+  }
+  
+  .life-style {
+    background-color: grey;
+    background-image: url('Assets/Axeon3xRDS1.jpg')
+  }
