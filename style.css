@@ -1,0 +1,254 @@
+.accordion {
+    width: 100%;
+    height: 658px;
+    overflow: hidden;
+    /* margin: 50px auto; */
+  }
+  
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 658px;
+    transition: all 500ms ease;
+    transform: skew(20deg);
+  }
+  
+  .accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 658px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: skew(-20deg);
+  }
+  
+  .accordion ul li div a {
+    display: block;
+    height: 658px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 200ms ease;
+  }
+  
+  .accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    /* -webkit-transform: translateX(-20px);
+    transform: translateX(-20px); */
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  
+  .accordion ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 160px;
+  }
+  
+  .accordion ul li div a p {
+    top: 160px;
+    font-size: 13.5px;
+  }
+
+.accordion ul li:nth-child(1) > div { background-image: url("Assets/Axeon3xRDS1.jpg"); }
+
+.accordion ul li:nth-child(2) > div { background-image: url("Assets/Brodax44SM.jpg"); }
+
+.accordion ul li:nth-child(3) > div { background-image: url("Assets/OD50-1.jpg"); }
+
+.accordion ul li:nth-child(4) > div { background-image: url("Assets/REKT-Social-01.jpg"); }
+
+.accordion ul li:nth-child(5) > div { background-image: url("Assets/DSC_4680.jpg"); }
+
+.accordion ul li:nth-child(6) > div { background-image: url("Assets/10-22-2.jpg"); }
+
+.accordion ul li:nth-child(7) > div { background-image: url("Assets/17_Umarex_T4E_Atmo_ZB5A1453_ret.jpg"); }
+
+.accordion ul:hover li { width: 8%; }
+
+.accordion ul:hover li:hover { width: 60%; }
+
+/* .accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); } */
+
+.accordion ul:hover li:hover div {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+
+    .accordion { height: auto; }
+    
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none;
+    }
+    
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Raleway:100,400,300,600);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size:15px;
+}
+
+
+h3 {
+  font-size:25px;
+  font-weight:300;
+}
+
+h4 {
+  font-size:15px;
+  line-height:25px;
+  margin:0px;
+  padding:0;
+}
+
+p {
+  line-height:20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ed1c24;
+}
+
+.nav-tabs .nav-item-show .nav-link, .nav-tabs .nav-link.active {
+    color: #ed1c24;
+}
+
+section a {
+  text-decoration:none;
+  color:#ffffff;
+}
+
+.row {
+  width:100%;
+  box-sizing:border-box;
+  overflow:hidden;
+  /*border:1px solid black;*/
+}
+
+.row section {
+  width:calc(50% + 90px);
+  height:400px;
+  margin:0;
+  display:inline-block;
+  padding:50px;
+  box-sizing:border-box;
+  -webkit-transform: skewx(22deg);
+}
+
+.row section div {
+  -webkit-transform: skewx(-22deg);
+}
+
+.row .news {
+  position:absolute;
+  background-color: black;
+  padding-left:130px;
+  padding-right:80px;
+  left:-90px;
+  box-sizing:border-box;
+}
+
+.row .tweet {
+  position:absolute;
+  right:-90px;
+  padding-left:80px;
+  padding-right:130px;
+  background: url('https://www.axeonoptics.com/UMAREX/img/Axeon-Header-Background.jpg');
+  box-sizing:border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .row {
+    overflow:hidden;
+    box-sizing:border-box;
+    background-color: #548379;
+    height:800px;
+  }
+  .row section {
+    display:block;
+   width:calc(100%);
+  height:auto;
+  }
+
+  
+  .row .news {
+    position:relative;
+    padding-left:5%;
+    padding-right:5%;
+    
+    padding-bottom:250px;
+    left:auto;
+    -webkit-transform:translateY(-140px)  skewy(11deg);
+  }
+
+  .row .news .newsContainer {
+    -webkit-transform: translateY(140px) skewy(-11deg);
+  }
+
+  .row .tweet {
+    position:relative;
+    -webkit-transform:translateY(-140px) skewy(11deg);
+    right:auto;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:0px;
+    padding-bottom:120px;
+  }
+  
+  .row .tweet .tweetContainer{
+    -webkit-transform:translateY(0px) skewy(-11deg);
+  }
+  
+}
