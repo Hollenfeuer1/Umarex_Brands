@@ -77,19 +77,19 @@
     font-size: 13.5px;
   }
 
-.accordion ul li:nth-child(1) > div { background-image: url("Assets/Axeon3xRDS1.jpg"); }
+.accordion ul li:nth-child(1) > div { background-image: url("assets/Axeon3xRDS1.jpg"); }
 
-.accordion ul li:nth-child(2) > div { background-image: url("Assets/Brodax44SM.jpg"); }
+.accordion ul li:nth-child(2) > div { background-image: url("assets/Brodax44SM.jpg"); }
 
-.accordion ul li:nth-child(3) > div { background-image: url("Assets/OD50-1.jpg"); }
+.accordion ul li:nth-child(3) > div { background-image: url("assets/OD50-1.jpg"); }
 
-.accordion ul li:nth-child(4) > div { background-image: url("Assets/REKT-Social-01.jpg"); }
+.accordion ul li:nth-child(4) > div { background-image: url("assets/REKT-Social-01.jpg"); }
 
-.accordion ul li:nth-child(5) > div { background-image: url("Assets/DSC_4680.jpg"); }
+.accordion ul li:nth-child(5) > div { background-image: url("assets/DSC_4680.jpg"); }
 
-.accordion ul li:nth-child(6) > div { background-image: url("Assets/10-22-2.jpg"); }
+.accordion ul li:nth-child(6) > div { background-image: url("assets/10-22-2.jpg"); }
 
-.accordion ul li:nth-child(7) > div { background-image: url("Assets/17_Umarex_T4E_Atmo_ZB5A1453_ret.jpg"); }
+.accordion ul li:nth-child(7) > div { background-image: url("assets/17_Umarex_T4E_Atmo_ZB5A1453_ret.jpg"); }
 
 .accordion ul:hover li { width: 8%; }
 
